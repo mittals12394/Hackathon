@@ -1,37 +1,54 @@
-let switchCtn = document.querySelector("#switch-cnt");
-let switchC1 = document.querySelector("#switch-c1");
-let switchC2 = document.querySelector("#switch-c2");
-let switchCircle = document.querySelectorAll(".switch__circle");
-let switchBtn = document.querySelectorAll(".switch-btn");
-let aContainer = document.querySelector("#a-container");
-let bContainer = document.querySelector("#b-container");
-let allButtons = document.querySelectorAll(".submit");
+// // const form = document.querySelector("form")
+// eField = form.querySelector(".email"),
+// eInput = eField.querySelector("input"),
+// // pField = form.querySelector(".password"),
+// pInput = pField.querySelector("input");
 
-let getButtons = (e) => e.preventDefault()
 
-let changeForm = (e) => {
+// // form.onsubmit = (e)=>{
+// //   e.preventDefault(); //preventing from form submitting
+// //   //if email and password is blank then add shake class in it else call specified function
+// //   (eInput.value == "") ? eField.classList.add("shake", "error") : checkEmail();
+// //   (pInput.value == "") ? pField.classList.add("shake", "error") : checkPass();
 
-    switchCtn.classList.add("is-gx");
-    setTimeout(function(){
-        switchCtn.classList.remove("is-gx");
-    }, 1500)
 
-    switchCtn.classList.toggle("is-txr");
-    switchCircle[0].classList.toggle("is-txr");
-    switchCircle[1].classList.toggle("is-txr");
+// //   setTimeout(()=>{ //remove shake class after 500ms
+// //     eField.classList.remove("shake");
+// //     pField.classList.remove("shake");
+// //   }, 500);
 
-    switchC1.classList.toggle("is-hidden");
-    switchC2.classList.toggle("is-hidden");
-    aContainer.classList.toggle("is-txl");
-    bContainer.classList.toggle("is-txl");
-    bContainer.classList.toggle("is-z200");
-}
 
-let mainF = (e) => {
-    for (var i = 0; i < allButtons.length; i++)
-        allButtons[i].addEventListener("click", getButtons );
-    for (var i = 0; i < switchBtn.length; i++)
-        switchBtn[i].addEventListener("click", changeForm)
-}
+//   eInput.onkeyup = ()=>{checkEmail();} //calling checkEmail function on email input keyup
+//   pInput.onkeyup = ()=>{checkPass();} //calling checkPassword function on pass input keyup
 
-window.addEventListener("load", mainF);
+
+//   function checkEmail(){ //checkEmail function
+//     let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/; //pattern for validate email
+//     if(!eInput.value.match(pattern)){ //if pattern not matched then add error and remove valid class
+//       eField.classList.add("error");
+//       eField.classList.remove("valid");
+//       let errorTxt = eField.querySelector(".error-txt");
+//       //if email value is not empty then show please enter valid email else show Email can't be blank
+//       (eInput.value != "") ? errorTxt.innerText = "Enter a valid email address" : errorTxt.innerText = "Email can't be blank";
+//     }else{ //if pattern matched then remove error and add valid class
+//       eField.classList.remove("error");
+//       eField.classList.add("valid");
+//     }
+//   }
+
+
+//   function checkPass(){ //checkPass function
+//     if(pInput.value == ""){ //if pass is empty then add error and remove valid class
+//       pField.classList.add("error");
+//       pField.classList.remove("valid");
+//     }else{ //if pass is empty then remove error and add valid class
+//       pField.classList.remove("error");
+//       pField.classList.add("valid");
+//     }
+//   }
+
+
+//   //if eField and pField doesn't contains error class that mean user filled details properly
+//   if(!eField.classList.contains("error") && !pField.classList.contains("error")){
+//     window.location.href = form.getAttribute("action"); //redirecting user to the specified url which is inside action attribute of form tag
+//   }

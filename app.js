@@ -23,6 +23,6 @@ app.use(function (error, req, res, next) {
   res.status(500);
 });
 
-// db.connectToDatabase().then(function () {
-// });
-app.listen(3000);
+db.connectToDatabase().then(function () {
+    app.listen(3000);
+});
