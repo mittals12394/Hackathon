@@ -5,13 +5,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Log In</title>
+  <link rel="stylesheet" href="/styles/base.css">
   <link rel="stylesheet" href="/styles/login.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
 <body>
-  <div class="wrapper">
-    <header>Login Form</header>
+  <%- include("includes/navbar") %> 
+  <div class="wrapper"> <section class="head">Login Form</section>
     <form action="/login" method="POST">
+      
       <div class="field email">
         <div class="input-area">
           <input type="text" placeholder="Email Address" name="email">
@@ -28,7 +30,7 @@
         </div>
         <div class="error error-txt">Password can't be blank</div>
       </div>
-      <button type="submit">Login</button>
+      <button type="submit"> <h3>Login</h3> </button>
     </form>
     <div class="sign-txt">Not yet member? <a href="/signup">Signup now</a></div>
   </div>

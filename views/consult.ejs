@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/base.css">
+    <link rel="stylesheet" href="/styles/consult.css">
+</head>
+<body>
+    <%- include("includes/navbar") %> 
+    <div id="page" class="site">
+        <div class="contianer">
+            <div class="form-box">
+                <div class="progress">
+                  <ul class="progress-steps">
+                    <li class="step active">
+                        <span>1</span>
+                        <p>
+                            Personal <br><span>50secs to complete</span>
+
+                        </p>
+                    </li>
+                    <li class="step">
+                        <span>2</span>
+                        <p>
+                            Financial Aid and Income Details<br><span>30secs to complete</span>
+
+                        </p>
+                    </li>
+                    <li class="step">
+                        <span>3</span>
+                        <p>
+                            Consultation types <br><span>20secs to complete</span>
+
+                        </p>
+                    </li>
+                  </ul>
+
+                </div>
+                <form action="">
+                    <div class="form-one form-step">
+                        <div class="bg-svg"></div>
+                        <h2>Personal Information</h2>
+                        <p>Enter Your Personal Information Correctly</p>
+                        <div><label for="name">Name:</label><input type="text" id="name" placeholder="pawas goyal"></div>
+                        <div><label for="age">Age</label><input type="number" id="age" placeholder="19"></div>
+                        <div><label for="occupation">Occupation</label><input type="text" id="occupation" placeholder="student"></div>
+                        <div><label for="gender">Select you gender</label>
+                            <select name="gender">
+                                <option value="none" selected>Gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">other</option>
+                            </select></div>
+                    </div>
+                    <div class="form-two form-step">
+                        <div class="bg-svg"></div>
+                        <h2>Financial Aid</h2>
+                        <div>
+                            <label for="Financial-Aid">Choose if you want Financial Aid:</label>
+
+                            <select name="faid" id="Financial-Aid">
+                              <option value="Yes">Yes</option>
+                              <option value="No">No</option>
+                              <option value="Maybe">Maybe</option>
+                            
+                            
+                            </select></div>
+                            
+
+                    </div>
+                    <div><label for="income">Income</label><input type="number" id="income" placeholder="10000"></div>
+                    <div class="form-third form-step">
+                        <div class="bg-svg"></div>
+                        <h2>Consultation</h2>
+                       <div><label for="email">Email:</label>
+                    <input type="email" placeholder="example@exampl.com"></div>
+                       <div><label for="telephone">Mobile No.</label>
+                    <input type="tel" placeholder="91xxxxxxxx"></div>
+                    <div>
+                        <label for="Consultation">Choose a Consultation Plan:</label>
+
+<select name="consul" id="Consultation">
+  <option value="work-stress">Work Stress</option>
+  <option value="rel-stress">Relationship Stress</option>
+  <option value="bully">Being Bullied</option>
+  <option value="insomnia">Sleep Disorder</option>
+  <option value="confidence-lack">Lacking Confidence</option>
+  <option value="procastination">Not Able to Focus</option>
+  <option value="Academic Stress">Not Able to Study</option>
+  <option value="social-insecure">Not Able to Communicate</option>
+  <option value="Marital-Issues">Marriage Problems</option>
+  <option value="High-Temper">Get Angry Easily</option>
+
+</select>
+                    </div>
+                    
+
+                    </div>
+                   </div>
+                   <div class="btn-group">
+                    <button type="button" class="btn-prev" disabled>Back</button>
+                    <button type="button"
+                    class="btn-next">Next Step</button>
+                    <button type="submit" class="btn-prev">Submit</button>
+                    
+                   </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+
+    <script src="/scripts/consult.js"></script>
+</body>
+</html>

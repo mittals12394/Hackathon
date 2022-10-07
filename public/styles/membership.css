@@ -11,6 +11,7 @@
     min-height: 100vh;
 
     background: linear-gradient(to right, #6da9d1, #33e9dc,rgb(215, 172, 130));
+    margin-top: 3rem;
 }
 
 .container h2{

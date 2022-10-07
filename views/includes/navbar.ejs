@@ -1,0 +1,51 @@
+<header>
+       
+    <div class="navs containers"><a href="/" class="logos">THECALM<span>WAY</span></a></div>
+            
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+      
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="/doctors" class="active">Doctors</a>
+                </li>
+                <li>
+                    <a href="/consult">Consult</a>
+                </li>
+                <li>
+                    <a href="/volunteer">Volunteer</a>
+                </li>
+                <li>
+                    <a href="/stories">Stories</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+                <li>
+                    <a href="/membership">Plans</a>
+                </li>
+                <li>
+                    <a href="/payment">Donate</a>
+                </li>
+                <li>
+                    <a href="/login">Login</a>
+                </li>
+            </ul>
+        </nav>
+       
+   </header>
+
+   <script>
+    hamburger=document.querySelector(".hamburger");
+    hamburger.onclick=function(){
+        navbar=document.querySelector(".nav-bar");
+        navbar.classList.toggle("active");
+    }
+   
+
+
+   </script>

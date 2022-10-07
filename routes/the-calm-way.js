@@ -21,6 +21,10 @@ router.get("/stories", function(req,res){
     res.render("stories");
 });
 
+router.get("/post-page", function(req,res){
+  res.render("post-page");
+});
+
 router.get("/membership", function(req,res){
     res.render("membership");
 });
@@ -97,6 +101,14 @@ router.post("/login", async function(req,res){
 
   console.log("User successfully logged in");
   res.redirect("/");
+});
+
+router.get("/consult", function(req,res){
+  res.render("consult");
+});
+
+router.get("/doctors", function(req,res){
+  res.render("doctors");
 });
 
 module.exports = router;

@@ -6,25 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Post Page</title>
     <!-- link to blog css -->
-    <link rel="stylesheet" href="/styles/blog.css">
+    <link rel="stylesheet" href="/styles/base.css">
+    <link rel="stylesheet" href="/styles/stories.css">
     <!-- 
     link to boxicons
      -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
+    <%- include("includes/navbar") %> 
     <!-- header -->
-    <header>
-        <!-- logo -->
-      <div class="nav container"><a href="#" class="logo">THECALM<span>WAY</span></a></div>
-    </header>
   <section class="post-header">
     <div class="header-content post-container">
-        <a href="blog.html" class="back-home">Back to Stories</a>
+        <a href="/stories" class="back-home">Back to Stories</a>
 
         <h1 class="header-title">Lorem ipsum dolor sit amet.</h1>
 
-        <img src="/imgs/p2.webp" alt="" class="header-img">
+        <img src="/images/p2.webp" alt="" class="header-img">
     </div>
   </section>
     <!-- filtering posts -->
@@ -74,6 +72,6 @@
 <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
 
     <!-- link to js -->
-    <script src="/js/blog.js"></script>
+    <script src="/scripts/blog.js"></script>
 </body>
 </html>

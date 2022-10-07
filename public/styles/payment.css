@@ -15,7 +15,9 @@
   align-items: center;
   padding:25px;
   min-height: 100vh;
-  background: linear-gradient(90deg, #7de9aa , rgb(120, 198, 199));}
+  background: linear-gradient(90deg, #7de9aa , rgb(120, 198, 199));
+  margin-top: 3rem;
+}
 
 .container form{
   padding:20px;

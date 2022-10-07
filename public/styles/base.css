@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    font-family:'Poppins',sans-serif;
+    padding: 0;margin: 0;box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+}
+:root{
+    --container-color:#1a1e21
+    ;
+    --second-color:#fd8f44;
+    --text-color:#172317;
+    --logo-color:rgba(115, 178, 230, 0.878);
+    --bg-color:#fff;
+}
+::selection{
+    color:var(--bg-color);
+    background:var(--second-color);
+ 
+
+}
+a{
+    text-decoration: none !important;
+}
+li{
+    list-style:none;
+
+}
+header{
+    position:fixed;
+    top: 0;left: 0;width: 100%;
+    z-index: 200;
+    background: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+    height:60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 28px;
+}
+header.shadow{
+    background:var(--bg-color);
+    box-shadow:0 1px 4px hsl(0 4% 14% /10%);
+    
+    transition:0.45s ;
+}
+header.shadow .logo{
+    color:var(--text-color);
+}
+.containers{
+    max-width: 1068px;
+    margin:auto;
+   
+    width: 100%;
+}
+.navs{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 18px 0px;
+}
+.logos{
+    font-size: 1.5rem;
+    font-weight:600;
+    color:var(--bg-color);
+}
+.logos span{
+    color:var(--second-color);
+}
+.hamburger{
+    display: none;
+}
+.nav-bar ul{
+display:flex;
+}
+.nav-bar ul li a{
+    display:block;
+    color:#fefefe;
+    font-size:16px;
+    padding: 10px 18px;
+    border-radius: 50px;
+    transition:0.2s;
+    margin:0 5px;
+    font-weight:500;
+
+}
+.nav-bar ul li  a:hover{
+    color:#96e6a1;
+    background:#fefefe;
+}
+
+@media  screen and (max-width:1500px) {
+    header{
+        padding: 0px 50px;
+    }
+    
+}
+
+@media  screen and (max-width: 1300px) {
+   header{
+    padding: 0px 30px;
+   }
+    
+}
+@media  screen and (max-width: 1100px) {
+  .hamburger{
+    display:block;
+  }
+  .hamburger .line{
+    width: 30px;
+    height: 3px;
+    background: #fefefe;
+    margin: 6px 0px;
+
+  }
+.nav-bar{
+    height:0;
+    position:absolute;
+    top:80px;
+    left: 0;right: 0;
+    width:100vw;
+    background: #96e6a1;
+    transition: 0.2s;
+    overflow: hidden;
+  }
+.nav-bar.active{
+    height:480px;
+  }
+
+.nav-bar ul{
+    display: block;
+    width:fit-content;
+    margin:80px auto 0 auto;
+    text-align:center;
+    transition:0.5s;
+    opacity:0;
+
+  }
+.nav-bar.active ul{
+opacity:1;
+  }
+.nav-bar ul li a{
+    margin-bottom: 12px;
+    color:#fff;
+  }
+section {
+    padding:3rem;
+}
+.heading{
+    font-size:2rem;
+}
+    
+}

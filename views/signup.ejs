@@ -5,12 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Log In</title>
+  <link rel="stylesheet" href="/styles/base.css">
   <link rel="stylesheet" href="/styles/signup.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
 <body>
+  <%- include("includes/navbar") %> 
   <div class="wrapper">
-    <header>Join Us</header>
+    <section>Join Us</section>
     <form action="/signup" method="POST">
         <div class="field">
             <div class="input-area">
@@ -39,7 +41,7 @@
         </div>
         <div class="error error-txt">Password can't be blank</div>
       </div>
-      <button type="submit">Sign Up</button>
+      <button type="submit"> <h3>Sign Up</h3> </button>
       <!-- <input type="submit" value="Sign Up"> -->
     </form>
     <div class="sign-txt">Already a member? <a href="/login">Sign In now</a></div>
