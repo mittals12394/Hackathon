@@ -1,105 +1,115 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-*{
-    font-family:'Poppins',sans-serif;
-    padding: 0;margin: 0;box-sizing: border-box;
-    scroll-behavior: smooth;
-    scroll-padding-top: 2rem;
-}
-:root{
-    --container-color:#1a1e21
-    ;
-    --second-color:#fd8f44;
-    --text-color:#172317;
-    --logo-color:rgba(115, 178, 230, 0.878);
-    --bg-color:#fff;
-}
-::selection{
-    color:var(--bg-color);
-    background:var(--second-color);
- 
 
+section {
+    padding:3rem 9%;
 }
-a{
-    text-decoration: none;
-}
-li{
-    list-style:none;
 
-}
-header{
-    position:fixed;
-    top: 0;left: 0;width: 100%;
-    z-index: 200;
-    background: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
-    height:80px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding:0 28px;
-}
-header.shadow{
-    background:var(--bg-color);
-    box-shadow:0 1px 4px hsl(0 4% 14% /10%);
-    
-    transition:0.45s ;
-}
-header.shadow .logo{
-    color:var(--text-color);
-}
-.container{
-    max-width: 1068px;
-    margin:auto;
-   
-    width: 100%;
-}
-.nav{
-    display: flex;
-    justify-content: space-between;
+.home{
+    display:flex;
     align-items:center;
-    padding: 18px 0px;
+    justify-content:center;
+    background:url(/images/wallpapersden.com_depressed-alone_3840x2743.jpg) no-repeat ;
+    background-position: center;
+    background-size: cover;
+    padding-top: 17rem;
+    padding-bottom: 10rem;
 }
-.logo{
-    font-size: 1.5rem;
-    font-weight:600;
-    color:var(--bg-color);
+.home .content .btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.6rem 2rem;
+    font-size:1.7rem;
+    border-radius:.5rem;
+    border:.2rem solid white;
+    color:white;
+    cursor:pointer;
 }
-.logo span{
-    color:var(--second-color);
+
+.home .content{
+    text-align:center;
+    width: 60rem;
 }
-.hamburger{
-    display: none;
-}
-.nav-bar ul{
-display:flex;
-}
-.nav-bar ul li a{
-    display:block;
+
+.home .content h3{
     color:#fefefe;
-    font-size:16px;
-    padding: 10px 25px;
-    border-radius: 50px;
-    transition:0.2s;
-    margin:0 5px;
+    font-size:3rem;
+}
+.home .content h3 span{
+    color:rgb(22, 238, 238);
+}
+.home .content p{
+    color:rgb(87, 87, 187);
+    font-size:1.4rem;
     font-weight:500;
+    padding:1rem 0;
+    line-height:1.8;
+}
+.heading{
+    text-align:center;
+    padding:2rem 0;
+    padding-bottom: 3rem;
+    font-size:3.5rem;
+    color:darkblue;
+}
+
+.heading span{
+    background: rgb(152, 210, 101);
+    color:#fff;
+    display: inline-block;
+    padding:.5rem 2rem;
+    clip-path:polygon(100% 0,93% 50%,100% 99%, 0% 100%,7% 50% ,0 0);
+}
+.features .box-container{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(25rem,1fr));
+    gap:1.5rem;
+}
+.features .box-container .box{
+    padding: 3rem 2rem;
+    background:#fff;
+    outline:.1rem solid rgba(0,0,0,.1);
+    outline-offset: -1rem;
+    text-align:center;
+    box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
 
 }
-.nav-bar ul li  a:hover{
-    color:#96e6a1;
-    background:#fefefe;
+.features .box-container .box:hover{
+
+    outline:1rem solid rgba(0,0,0,.1);
+    outline-offset:0;
 }
-.nav-bar ul li a.active{
-    color:#96e6a1;
-    background-color: #fefefe;
+.features .box-container .box img{
+    margin:1rem 0;
+    height:15rem;
+    width:15rem;
 }
-@media  only screen  and (max-width:1400px){
-    header{
-        padding: 0px 50px;
-    }
+.features .box-container .box h3{
+    font-size:1.8rem;
+    line-height:1.8;
+    color:#172317;
     
+    display:-webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow:hidden;
+
 }
-@media  only screen  and (max-width:1100px){
-    header{
-        padding: 0px 30px;
-    }
+.features .box-container .box h3{
+    font-size:1.8rem;
+    line-height:1.8;
+    color:rgb(40, 246, 167);
+    padding: 1rem 0;
     
+    display:-webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow:hidden;
+
 }
+
+
+
+
+
+
+
+
